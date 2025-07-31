@@ -42,15 +42,17 @@
     </nav>
 
     <main>
-        @yield('content')
+        {{$slot}}
     </main>
 
     <footer
         class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-blue-600 text-white h-24 mt-24 opacity-90 md:justify-center">
         <p class="ml-2">Created by wolfsenberg | Copyright &copy; 2025, All Rights reserved</p>
 
-        <a href="create.html" class="absolute top-1/3 right-10 bg-black text-white py-2 px-5 rounded-full">Post Job</a>
+        <a href="/listings/create" class="absolute top-1/3 right-10 bg-black text-white py-2 px-5 rounded-full">Post Job</a>
     </footer>
+
+    <x-flash-message />
 </body>
 
 </html>
