@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('company');
             $table->string('location');
             $table->string('email');
+            $table->string('website');
             $table->longText('description');
         });
     }
