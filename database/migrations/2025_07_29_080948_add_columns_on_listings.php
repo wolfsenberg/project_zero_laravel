@@ -13,6 +13,7 @@ return new class extends Migration
     {
       Schema::table('listings', function (Blueprint $table) {
             $table->string('title');
+            $table->string('logo')->nullable();
             $table->string('tags');
             $table->string('company');
             $table->string('location');
