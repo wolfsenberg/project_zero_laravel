@@ -32,7 +32,10 @@
         @else
             <p>No listing found</p>
         @endunless
+    </div>
 
+    <div class ="mt-7 p-4 flex justify-center">
+        {{ $listings->links() }}
     </div>
 
 </x-layout>
