@@ -14,11 +14,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-
         //\App\Models\User::factory(5)->create();
 
+        $user = User::factory()->create([
+            'name' => 'John Doe',
+            'email' => 'john@gmail.com',
+        ]);
 
-        Listing::factory(8)->create();
+        Listing::factory(8)->create([
+            'user_id' => $user->id
+        ]);
 
         // Listing::create([
         //     'title' => 'Frontend Developer',
@@ -30,7 +35,7 @@ class DatabaseSeeder extends Seeder
         //     'description' => 'We are looking for a talented frontend developer to join our growing team. Must be proficient in React and modern UI/UX practices.'
         // ]);
 
-        // Listing::create([  
+        // Listing::create([
         //     'title' => 'Backend Developer',
         //     'tags' => 'PHP, Laravel, MySQL, API',
         //     'company' => 'CodeSphere Solutions',
@@ -39,11 +44,6 @@ class DatabaseSeeder extends Seeder
         //     'website' => 'https://www.codesphere.io',
         //     'description' => 'Join our backend team to build scalable APIs and services. Experience in Laravel is a plus.'
         // ]);
-
-
-
-
-
 
         //User::factory(10)->create();
         /*
