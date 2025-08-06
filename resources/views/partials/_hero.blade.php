@@ -11,7 +11,7 @@
             Find or post IT jobs
         </p>
         <div>
-            <a href="register.html"
+            <a href="/register"
                 class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-gray-300 hover:border-gray-300">Sign
                 Up to List a Job</a>
         </div>
